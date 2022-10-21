@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #ff7235;
+  --secondary-color: #8b8eaf;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff7235;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.home{
+  height: 100vh;
+  width: 100%;
+  background: #fcfcfc;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .text-one{
+  font-size: 25px;
+  color: black;
+}
+.home .text-two{
+  color: #0E2431;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: #ff7235;
+}
+.home .text-four{
+  font-size: 23px;
+  margin: 5px 0;
+  color: #ff7235;
+}
+
+section{
+  padding-top: 40px;
+}
+
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #ff7235;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .about-details .left{
+  width: 65%;
+}
+
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-details .right{
+  position: left;
+  width: 1000%;
+}
+
+section .topic{
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p{
+  text-align: justify;
+  color: #0E2431;
+}
+
+.services .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+  color: #fff;
+}
+.services .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #ff7235;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+  
+  color: #fff;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #000;
+}
+
+.projects{
+  background-color: #fcfcfc;
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pix{
+  width: contain;
+  height: contain;
+}
+
+.projects-container{
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-title{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container{
+  text-align: center;
+  width: 50px;
+  padding: 1remm;
+}
+
+.project-container p{
+  padding: 0.4rem;
+}
+
+.project-title{
+  margin-bottom: 1rem;
+}
+
+.project-card{
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 10px;
+  margin: 50px;
+}
+
+.project-details{
+  margin-bottom: 1rem;
+}
+
+.contact{
+  background: #fcfcfc;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.skills{
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-title{
+  margin-bottom: 1rem;
+}
+
+.skills-card img{
+padding: 1.25rem;
+}
+
+.icon{
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card{
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px --secondary-shadow;
+  padding: 20px;
+  margin: 10px;
+}
+
+.footer {
+  background-color: var(--bg-color);
+  padding: 1.5rem;
+  text-align: center;
+  margin: 2rem 0 0;
+  font-size: 36px;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit]{
+  background-color: #fcfcfc;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ff7235;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+fieldset{
+  max-width: 1000%;
+ display: block;
+  position: relative;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 12px 20px;
+  border: 2px groove (internal value);
+  justify-items: center;
+}
+
+media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 600px) {
+  .about .about-details{
+    justify-content: left;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav .navbar{
+    width: 90%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #ff7235;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #ff7235;
+  }
+}
