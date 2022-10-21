@@ -1,0 +1,99 @@
+fieldset {
+  display: bold;
+  border-block-color: black;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: url(/mona-eendra-vC8wj_Kphak-unsplash\(1\).jpg);
+}
+ form{
+    border: 5px;
+}
+
+input[type=text], input[type=password] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px slategrey;
+box-sizing: border-box;
+}
+
+button {
+    background-color: rebeccapurple;
+    color: azure;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+fieldset {
+  display: bold;
+  border-block-color: black;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: url(/mona-eendra-vC8wj_Kphak-unsplash\(1\).jpg);
+}
+ form{
+    border: 5px;
+}
+
+input[type=text], input[type=password] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px slategrey;
+box-sizing: border-box;
+}
+
+button {
+    background-color: rebeccapurple;
+    color: azure;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.registerbtn{
+  background-color: rebeccapurple;
+    color: azure;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container{
+
+    padding: 16px;
+}
+}
+
+.container{
+    padding: 16px;
+}

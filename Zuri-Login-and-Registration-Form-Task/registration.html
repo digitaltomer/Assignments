@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <form action="/index.html">
+      <fieldset>
+        <div class="row">
+          <div class="col-25">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email" name="email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="name"><b>Name</b></label>
+          </div>
+          <div class="col-35">
+            <input type="text" placeholder="First" name="fname" required>
+          </div>
+          <div class="col-35">
+            <input type="text" placeholder="Last" name="lname" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="username"><b>Choose your username</b></label>
+            <div class="col-75">
+              <input type="text" placeholder="username" name="uname" align="right" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="pnum"><b>Phone number</b></label>
+              <div class="col-75">
+                <input type="number" placeholder="number" name="pnum" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="25">
+                <label for="Gender"><b>Gender</b></label>
+                <div class="col-75">
+                  <select id="genderselect" name="genderselect">
+                    <option value="default" selected="selected"> I am...</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="favco"><b>Favourite Color</b></label>
+                      <div class="col-75">
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                        <div class="row">
+                          <div class="col-25">
+                            <label for="bday"><b>Date of birth</b></label>
+                            <div class="col-25">
+                               <label for="start">Enter the Date:</label>
+                              <input type="date" name="begin" placeholder="dd-mm-yyyy" value=""min="1997-01-01" max="2030-12-31">
+                            </div>
+                          </div>
+                          <div class="row" align="center">
+                            <button onclick="document.location='/sucess (Register).html'">Register</a></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </fieldset>
+    </form>
+    <div class="container">
+      <p>Already have an account?<a href="/index.html">Login</a></p>
+    </div>
+</body>
+
+</html>
