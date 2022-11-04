@@ -7,8 +7,8 @@ Below is all about the tasks i worked on this branch under the Assignment repo
 
  My Zuri Assigment Repo (Week 4 Branch)
 
- 1. Zuri-Task-CSS-Flex-and-Grid-Layout
- 2. Zuri-songcrud
+ 1. Zuri Task CSS Flex and Grid Layout
+ 2. Zuri Songcrud
 
 # Description
 
