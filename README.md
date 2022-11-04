@@ -20,6 +20,8 @@ The branch also contains building my own personal portfolio website
 
 The login and Registration form task was built to ensure login and Registration successful pages was shown to users who login and resgister using the form.
 
+The portfolio task was built to showcase about me, my portfolio, my services, my top skills and how to contact me.
+
 # Tech Stack
 
 **HTML** 
