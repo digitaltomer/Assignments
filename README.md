@@ -12,7 +12,7 @@ Below is all about the tasks i worked on this branch under the Assignment repo
 
 # Description
 
-This is week 3 branch and it contains the zuri task on how to create a login and registration task.
+This is week 3 branch and it contains the zuri task on how to create a login and registration page.
 
 The branch also contains building my own personal portfolio website
 
