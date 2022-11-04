@@ -7,8 +7,8 @@ Below is all about the tasks i worked on this branch under the Assignment repo
 
  My Zuri Assigment Repo (Week 3 Branch)
 
- 1. Zuri-Login-and-Registration-Form-Task
- 2. Zuri-Task-Portfolio-Website
+ 1. Zuri Login and Registration Form Task
+ 2. Zuri Task Portfolio Website
 
 # Description
 
